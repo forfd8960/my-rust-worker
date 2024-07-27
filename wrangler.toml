@@ -1,0 +1,10 @@
+name = "my-rust-worker"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-07-27"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[[kv_namespaces]]
+binding = "cities"
+id = "4e14d4320db642618c51f43579e028ca"
